@@ -81,7 +81,7 @@ public  abstract class SpriteMobile  extends Sprite implements Runnable{
     public void dePausar() {
         this.pausa = false;
     }
-    public abstract void mover();
+  
     
     
     

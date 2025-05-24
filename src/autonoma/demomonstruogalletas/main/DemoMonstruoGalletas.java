@@ -4,6 +4,10 @@
  */
 package autonoma.demomonstruogalletas.main;
 
+import autonoma.demomonstruogalletas.elements.Cueva;
+import autonoma.demomonstruogalletas.elements.Monstruo;
+import autonoma.demomonstruogalletas.gui.VentanaPrincipal;
+
 /**
  * 
  * @author Heily Yohana Rios Ayala <heilyy.riosa@autonoma.edu.co>
@@ -17,6 +21,10 @@ public class DemoMonstruoGalletas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Monstruo miMonstruo= new Monstruo( 5, 100, 100, 64, 64); 
+       Cueva cueva = new Cueva(miMonstruo);
+        VentanaPrincipal ventana = new VentanaPrincipal(cueva);
+        ventana.setVisible(true);
     }
     
 }

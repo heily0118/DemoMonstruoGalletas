@@ -15,29 +15,33 @@ import javax.swing.ImageIcon;
  * @since 20250523
  * @version 1.0.0
  */
-public class Monstruo extends SpriteMobile {
+public class Galleta extends SpriteMobile{
      private Image imagen;
 
-    public Monstruo(int step, int x, int y, int height, int width) {
+    public Galleta(int step, int x, int y, int height, int width) {
         super(step, x, y, height, width);
-          this.imagen = new ImageIcon(getClass().getResource("/autonoma/demomonstruogalletas/images/monstruo.png")).getImage();
+        this.imagen = new ImageIcon(getClass().getResource("/autonoma/demomonstruogalletas/images/Galleta.png")).getImage();
     }
-
- 
 
     @Override
     public void paint(Graphics g) {
-         g.drawImage(imagen, x, y, width, height, null);
+        g.drawImage(imagen, x, y, width, height, null);
     }
 
     @Override
     public Rectangle getBoundaries() {
-        return new Rectangle(x, y, width, height);
+       return new Rectangle(x, y, width, height);
     }
 
     @Override
     public void run() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+           while (true) {
+        try {
+            Thread.sleep(100); 
+        } catch (InterruptedException e) {
+            break; 
+        }
+    }
     }
     
 }
