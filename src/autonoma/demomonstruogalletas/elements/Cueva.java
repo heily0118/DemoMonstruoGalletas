@@ -10,6 +10,6 @@ package autonoma.demomonstruogalletas.elements;
  * @since 20250523
  * @version 1.0.0
  */
-public class Campo {
+public class Cueva {
     
 }
