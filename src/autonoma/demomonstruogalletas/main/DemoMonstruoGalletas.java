@@ -11,7 +11,7 @@ import autonoma.demomonstruogalletas.gui.VentanaPrincipal;
 /**
  * 
  * @author Heily Yohana Rios Ayala <heilyy.riosa@autonoma.edu.co>
- * @since 20250523
+ * @since 20250524
  * @version 1.0.0
  */
 public class DemoMonstruoGalletas {
@@ -20,9 +20,12 @@ public class DemoMonstruoGalletas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       
         Monstruo miMonstruo= new Monstruo( 5, 100, 100, 64, 64); 
-       Cueva cueva = new Cueva(miMonstruo);
+        Cueva cueva = new Cueva(miMonstruo);
+        miMonstruo.setCueva(cueva); 
+        new Thread(miMonstruo).start();
+        
         VentanaPrincipal ventana = new VentanaPrincipal(cueva);
         ventana.setVisible(true);
     }

@@ -66,4 +66,13 @@ public class Cueva {
         }
     }
     
+    public ArrayList<Galleta> getGalletas() {
+        return galletas;
+    }
+
+    public void eliminarGalleta(Galleta galleta) {
+        galletas.remove(galleta);
+    }
+
+    
 }
